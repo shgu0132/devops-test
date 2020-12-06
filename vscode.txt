@@ -98,3 +98,27 @@ deployment strategies aws
 https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf
 
 
+ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+ sudo vi /etc/apt/sources.list
+	deb https://pkg.jenkins.io/debian-stable binary/
+sudo apt-get update
+lsof /var/lib/dpkg/lock-frontend
+sudo kill -9 
+sudo rm /var/lib/dpkg/lock-frontend
+sudo dpkg --configure -a
+
+sudo apt-get install openjdk-8-jdk
+sudo apt-get install jenkins
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+https://github.com/shgu0132/devops-test.git
+/etc/init.d/jenkins start
+http://172.24.136.240:8080/
+
+https://discourse.ubuntu.com/t/instructions-for-enabling-disabling-virtualbox-support-on-windows-and-macos/11043
+multipass set local.driver=hyperv
+
+https://multipass.run/docs/installing-on-windows
+multipass set local.driver=virtualbox
+
+
+
